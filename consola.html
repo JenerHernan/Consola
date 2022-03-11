@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <style>
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .cuerpo{
+                display: flex;
+                flex-direction: column;
+                width:20rem;
+                height:35rem;
+                background-color:deepskyblue;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
+                border-bottom-left-radius: 60px;
+                border-bottom-right-radius: 60px;
+            }
+            .pantallafuera{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5%;
+                margin-left: 5%;
+                width:90%;
+                height:45%;
+                background-color: black;
+                border-radius: 10px;
+            }
+            .pantalladentro{
+                width:65%;
+                height:65%;
+                background-color:dimgray;
+            }
+            .r1{
+                position: absolute;
+                top:60%;
+                left:33%;
+                width:60px;
+                height:20px;
+                background-color: black;
+            }
+            .r2{
+                position: absolute;
+                top:57.5%;
+                left:35.5%;
+                height:60px;
+                width:20px;
+                background-color: black;
+            }
+            #cross {
+                width: 100px;
+                height: 100px;
+                position: relative;
+            }
+
+            #cross:before, #cross:after {
+                content: "";
+                position: absolute;
+                background: black;
+            }
+
+            #cross:before {
+                left: 50%;
+                width: 30%;
+                margin-left: -15%;
+                height: 100%;
+            }
+
+            #cross:after {
+                top: 50%;
+                height: 30%;
+                margin-top: -15%;
+                width: 100%;
+            }
+
+            .botones1{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 15%;
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+
+            .botones2{
+                display:flex;
+                justify-content: space-between;
+                width:30%;
+            }
+
+            .botones3{
+                margin-top: 15%;
+                display:flex;
+                justify-content: center;
+            }
+
+            .btn{
+                background-color: black;
+                width:40px;
+                height:40px;
+                border-radius: 50%;
+            }
+            .btn2{
+                background-color: black;
+                width:40px;
+                height:18px;
+                border-radius: 20px;
+                margin-left: 3%;
+                margin-right: 3%;
+            }
+            .b1{
+                margin-top: 30%;
+            }
+            .b2{
+                margin-bottom: 30%;
+            }
+        </style>
+    </head>
+    <title>Consola</title>
+    <body>
+        <div class="cuerpo">
+            <div class="pantallafuera">
+                <div class="pantalladentro"></div>
+            </div>
+            <div class="botones1">
+                <div id="cross"></div>
+                <div class="botones2">
+                    <div class="btn b1"></div>
+                    <div class="btn b2"></div>
+                </div>
+            </div>
+            <div class="botones3">
+                <div class="btn2"></div>
+                <div class="btn2"></div>
+            </div>
+        </div>
+    </body>
+</html>
